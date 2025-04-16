@@ -6,18 +6,16 @@ from model import load_model, predict_disease
 from utils import preprocess_image
 from disease_info import get_disease_info
 
-# Set page configuration
 st.set_page_config(
     page_title="Vegetable Disease Detection",
     page_icon="🌱",
     layout="wide"
 )
 
-# Main title
+
 st.title("🌱 Vegetable Disease Detection")
 st.markdown("Upload an image of a vegetable plant leaf to detect if it has a disease.")
 
-# Initialize session state variables if they don't exist
 if 'prediction_made' not in st.session_state:
     st.session_state.prediction_made = False
 if 'prediction_result' not in st.session_state:
