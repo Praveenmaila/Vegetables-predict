@@ -141,8 +141,7 @@ def predict_disease(model_data, img_array, class_names):
         features = scaler.transform(features)
     except:
         # If scaler isn't fit yet, just use the raw features
-        pass
-    
+        pass    
     # Make prediction
     try:
         # Get probabilities for each class
