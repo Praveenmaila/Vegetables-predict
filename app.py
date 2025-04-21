@@ -12,7 +12,6 @@ st.set_page_config(
     layout="wide"
 )
 
-
 st.title("🌱 Vegetable Disease Detection")
 st.markdown("Upload an image of a vegetable plant leaf to detect if it has a disease.")
 
@@ -135,7 +134,6 @@ with col2:
                     st.write(f"{i}. {prevention}")
         else:
             st.info("No additional information available for this condition.")
-
 # Footer
 st.markdown("---")
 st.markdown("Developed for educational purposes. This tool is meant to assist in identifying plant diseases but should not replace professional diagnosis.")
